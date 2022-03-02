@@ -639,3 +639,45 @@ body{
   width: 16px;
   height: 16px;
 }
+
+
+
+.clients-wrapper {
+  background-color: #012F34;
+  background-image: url(../img/bg-img-10.png);
+  background-repeat: no-repeat;
+  background-position: calc(50% - 620px) 0;
+  padding: 140px 0;
+}
+
+.clients-inner {
+  text-align: center;
+}
+
+.clients-heading {
+  font-size: 48px;
+  line-height: 48px;
+  color: #ffffff;
+  margin: 0;
+  margin-bottom: 64px;
+}
+
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.clients-list__clients-item {
+}
+.clients-item {
+}
+.clients-item__clients-link {
+}
+.clients-link {
+}
+.clients-link__clients-img {
+}
+.clients-img {
+}

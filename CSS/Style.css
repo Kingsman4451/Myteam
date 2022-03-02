@@ -669,3 +669,188 @@ body{
   padding: 0;
   margin: 0;
 }
+
+
+
+/* CONTACT */
+.contact-wrapper {
+  background-color: #014E56;
+  background-image: url(../img/bg-img-8.png);
+  background-repeat: no-repeat;
+  background-position:calc(50% - 720px) 130px;
+  padding: 120px 0;
+}
+
+.contact-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-heading {
+  font-size: 64px;
+  line-height: 100px;
+  color: #ffffff;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.contact-subheading {
+  font-size: 32px;
+  line-height: 48px;
+  color: #F67E7E;
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.contact-list {
+  width: 540px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-left: 95px;
+}
+
+.contact-item {
+  position: relative;
+  padding: 22px 0;
+  margin-bottom: 8px;
+}
+.contact-item:nth-child(1)::before{
+  display: block;
+  content:"";
+  background-image: url(../img/service-img-1.png);
+  position:absolute;
+  left:-100px;
+  top:0px;
+  width: 72px;
+  height: 72px;
+}
+
+.contact-item:nth-child(2)::before{
+  display: block;
+  content:"";
+  background-image: url(../img/service-img-2.png);
+  position:absolute;
+  left:-100px;
+  top:0px;
+  width: 72px;
+  height: 72px;
+}
+
+.contact-item:nth-child(3)::before{
+  display: block;
+  content:"";
+  background-image: url(../img/service-img-3.png);
+  position:absolute;
+  left:-100px;
+  top:0px;
+  width: 72px;
+  height: 72px;
+}
+.contact-item-text {
+  color: #ffffff;
+  margin: 0;
+}
+
+.contact-form {
+  width: 542px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-name {
+  background-color: #014E56;
+  color:#ffffff;
+  padding-right: 81px;
+  padding-bottom: 17px;
+  padding-left: 14px;
+  margin-bottom: 24px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #ffffff;
+}
+.form-name::placeholder{
+  color:#ffffff;
+  opacity: 0.6;
+}
+
+.form-email {
+  background-color: #014E56;
+  color:#ffffff;
+  padding-right: 81px;
+  padding-bottom: 17px;
+  padding-left: 14px;
+  margin-bottom: 24px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #ffffff;
+}
+
+.form-email::placeholder{
+  color:#ffffff;
+  opacity: 0.6;
+}
+
+.form-company-name {
+  background-color: #014E56;
+  color:#ffffff;
+  padding-right: 81px;
+  padding-bottom: 17px;
+  padding-left: 14px;
+  margin-bottom: 24px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #ffffff;
+}
+
+.form-company-name::placeholder{
+  color:#ffffff;
+  opacity: 0.6;
+}
+
+.form-title {
+  background-color: #014E56;
+  color:#ffffff;
+  padding-right: 81px;
+  padding-bottom: 17px;
+  padding-left: 14px;
+  margin-bottom: 24px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #ffffff;
+}
+
+.form-title::placeholder{
+  color:#ffffff;
+  opacity: 0.6;
+}
+
+.form-message{
+  resize: none;
+  background-color: #014E56;
+  color:#ffffff;
+  height: 84px;
+  padding-right: 81px;
+  padding-left: 14px;
+  margin-bottom: 24px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #ffffff;
+}
+
+.form-message::placeholder{
+  color:#ffffff;
+  opacity: 0.6;
+}
+
+.form-btn {
+  font-weight: 600;
+  width: 123px;
+  color: #004047;
+  padding: 10px 32px;
+  background-color: #ffffff;
+  border: none;
+  border-radius:24px;
+  cursor: pointer;
+}

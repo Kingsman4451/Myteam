@@ -1,0 +1,103 @@
+@font-face {
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src:  url("../fonts/livvic-v11-latin-regular.woff2") format("woff2"), 
+       url("../fonts/livvic-v11-latin-regular.woff") format("woff"); 
+}
+@font-face {
+  font-family: "Livvic";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src:  url("../fonts/livvic-v11-latin-italic.woff2") format("woff2"), 
+       url("../fonts/livvic-v11-latin-italic.woff") format("woff"); 
+}
+@font-face {
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src:  url("../fonts/livvic-v11-latin-600.woff2") format("woff2"), 
+       url("../fonts/livvic-v11-latin-600.woff") format("woff"); 
+}
+@font-face {
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src:  url("../fonts/livvic-v11-latin-700.woff2") format("woff2"),
+       url("../fonts/livvic-v11-latin-700.woff") format("woff"); 
+}
+
+
+
+*{
+  box-sizing: border-box;
+}
+body{
+  font-family: "Livvic", sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 600;
+}
+.container {
+  width: 1150px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.header-wrapper {
+  background-color: #014E56;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.logo-navbar {
+  display: flex;
+  align-items: center;
+}
+
+.logo-link {
+  display: inline-block;
+}
+
+.logo-img {
+  display: block;
+  width: 160px;
+  height: 40px;
+}
+
+.navbar {
+  margin-left: 80px;
+}
+
+.nav-list {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item ~ .nav-item {
+  margin-left: 40px;
+}
+
+.nav-link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.header-btn {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 33px;
+  border: 2px solid #FFFFFF;
+  border-radius: 24px;
+}

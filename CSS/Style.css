@@ -149,10 +149,14 @@ body{
 }
 
 
+.header-responsive-menu{
+  display: none;
+}
+
 /* HER0 */
 .hero-wrapper {
   background-color:#014E56;
-  background-image: url(../img/bg-img-1.png), url(../img/bg-img-2.png);
+  background-image: url("../img/bg-img-1.png"), url("../img/bg-img-2.png");
   background-repeat: no-repeat;
   background-position-x: calc(50% - 720px), calc(50% + 370px);
   background-position-y: 129px, 480px;
@@ -204,7 +208,7 @@ body{
 /* SERVICES */
 .services-wrapper {
   background-color: #012F34;
-  background-image: url(../img/bg-img-3.png);
+  background-image: url("../img/bg-img-3.png");
   background-repeat: no-repeat;
   background-position-x:calc(50% + 730px);
   background-position-y:calc(50% + 225px);
@@ -264,7 +268,7 @@ body{
   display: inline-block;
   width: 72px;
   height: 72px;
-  background-image:url(../img/service-img-1.png);
+  background-image:url("../img/service-img-1.png");
   content: "";
 }
 
@@ -274,7 +278,7 @@ body{
   display: inline-block;
   width: 72px;
   height: 72px;
-  background-image:url(../img/service-img-2.png);
+  background-image:url("../img/service-img-2.png");
   content: "";
 }
 
@@ -284,7 +288,7 @@ body{
   display: inline-block;
   width: 72px;
   height: 72px;
-  background-image:url(../img/service-img-3.png);
+  background-image:url("../img/service-img-3.png");
   content: "";
 }
 
@@ -308,7 +312,7 @@ body{
 .testimonials-wrapper {
   background-color:#004047;
   padding: 140px 0;
-  background-image:url(../img/bg-img-4.png), url(../img/bg-img-5.png);
+  background-image:url("../img/bg-img-4.png"), url("../img/bg-img-5.png");
   background-repeat: no-repeat;
   background-position:calc(50% - 650px) 0, calc(50% + 620px) calc(50% + 320px)
 }
@@ -376,7 +380,7 @@ body{
   z-index: -1;
   width: 67px;
   height: 56px;
-  background-image: url(../img/testimonials-bg.png);
+  background-image: url("../img/testimonials-bg.png");
   content: " ";
 }
 
@@ -409,7 +413,7 @@ body{
 .contact-btn-wrapper {
   background-color:#F67E7E;
   padding: 76px 0;
-  background-image: url(../img/bg-img-6.png);
+  background-image: url("../img/bg-img-6.png");
   background-repeat: no-repeat;
   background-position:calc(50% - 620px) 65px
 }
@@ -582,7 +586,7 @@ body{
 /* ABOUT HERO */
 .about-wrapper {
   background-color: #014E56;
-  background-image: url(../img/bg-img-7.png);
+  background-image: url("../img/bg-img-7.png");
   background-repeat: no-repeat;
   background-position: calc(50% + 720px) calc(50% + 110px);
   padding: 120px 0;
@@ -630,7 +634,7 @@ body{
 .about-directors {
   position: relative;
   background-color:#004047;
-  background-image: url(../img/bg-img-8.png), url(../img/bg-img-4.png);
+  background-image: url("../img/bg-img-8.png"), url("../img/bg-img-4.png");
   background-repeat: no-repeat;
   background-position:calc(50% - 720px) 0, calc(50% + 645px) calc(50% + 475px)
 }
@@ -824,7 +828,7 @@ body{
 /* CLIENTS */
 .clients-wrapper {
   background-color: #012F34;
-  background-image: url(../img/bg-img-10.png);
+  background-image: url("../img/bg-img-10.png");
   background-repeat: no-repeat;
   background-position: calc(50% - 620px) 0;
   padding: 140px 0;
@@ -859,7 +863,7 @@ body{
 /* CONTACT */
 .contact-wrapper {
   background-color: #014E56;
-  background-image: url(../img/bg-img-8.png);
+  background-image: url("../img/bg-img-8.png");
   background-repeat: no-repeat;
   background-position:calc(50% - 720px) 130px;
   padding: 120px 0;
@@ -876,7 +880,9 @@ body{
       -ms-flex-align: center;
           align-items: center;
 }
-
+.contact-content{
+  width: 50%;
+}
 .contact-heading {
   font-size: 64px;
   line-height: 100px;
@@ -894,7 +900,7 @@ body{
 }
 
 .contact-list {
-  width: 540px;
+  width: 100%;
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -909,7 +915,7 @@ body{
 .contact-item:nth-child(1)::before{
   display: block;
   content:"";
-  background-image: url(../img/service-img-1.png);
+  background-image: url("../img/service-img-1.png");
   position:absolute;
   left:-100px;
   top:0px;
@@ -920,7 +926,7 @@ body{
 .contact-item:nth-child(2)::before{
   display: block;
   content:"";
-  background-image: url(../img/service-img-2.png);
+  background-image: url("../img/service-img-2.png");
   position:absolute;
   left:-100px;
   top:0px;
@@ -931,7 +937,7 @@ body{
 .contact-item:nth-child(3)::before{
   display: block;
   content:"";
-  background-image: url(../img/service-img-3.png);
+  background-image: url("../img/service-img-3.png");
   position:absolute;
   left:-100px;
   top:0px;
@@ -944,7 +950,7 @@ body{
 }
 
 .contact-form {
-  width: 542px;
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -955,6 +961,8 @@ body{
 }
 
 .form-name {
+  width: 100%;
+  display: block;
   background-color: #014E56;
   color:#ffffff;
   padding-right: 81px;
@@ -987,6 +995,8 @@ body{
 }
 
 .form-email {
+  width: 100%;
+  display: block;
   background-color: #014E56;
   color:#ffffff;
   padding-right: 81px;
@@ -1024,6 +1034,8 @@ body{
 }
 
 .form-company-name {
+  width: 100%;
+  display: block;
   background-color: #014E56;
   color:#ffffff;
   padding-right: 81px;
@@ -1061,6 +1073,8 @@ body{
 }
 
 .form-title {
+  width: 100%;
+  display: block;
   background-color: #014E56;
   color:#ffffff;
   padding-right: 81px;
@@ -1098,6 +1112,8 @@ body{
 }
 
 .form-message{
+  width: 100%;
+  display: block;
   resize: none;
   background-color: #014E56;
   color:#ffffff;
@@ -1149,11 +1165,13 @@ body{
 
 
 @media only screen and (max-width: 1200px){
-  .testimonials-item{
-    width: 30%;
+
+
+  .header-wrapper{
+    padding-bottom: 20px;
   }
   .services-wrapper {
-    background-image:url(../img/res-bg-1.png);
+    background-image:url("../img/res-bg-1.png");
     background-position-x: right;
     background-position-y: top;
   }
@@ -1162,14 +1180,21 @@ body{
   }
 
   .contact-btn-wrapper {
-    background-image: url(../img/res-bg-2.png);
+    background-image: url("../img/res-bg-2.png");
     background-position: bottom left
   }
 
 
 
+.testimonials-item{
+  width: 30%;
+}
+
+
+
+
 .about-wrapper{
-  background-image: url(../img/res-bg-3.png);
+  background-image: url("../img/res-bg-3.png");
   background-position: bottom right
 }
 
@@ -1177,7 +1202,7 @@ body{
   width: 100%;
 }
 .about-directors{
-  background-image: url(../img/res-bg-4.png), url(../img/bg-img-4.png);
+  background-image: url("../img/res-bg-4.png"), url("../img/bg-img-4.png");
   background-position: top left, bottom right;
 }
 .directors-list{
@@ -1203,9 +1228,30 @@ body{
   }
 
   .clients-wrapper{
-    background-image:url(../img/res-bg-6.png);
+    background-image:url("../img/res-bg-6.png");
     background-position:top left
   }
+
+
+.contact-wrapper{
+  background-image: url("../img/res-bg-4.png"), url("../img/res-bg-5.png");
+  background-position: calc(0% - 30px) 0% ,  100% calc(100% + 40px);
+}
+
+  .contact-inner{
+    justify-content: space-between;
+  }
+
+  .contact-content{
+    width:50%
+  }
+  .contact-item{
+    width:100%
+  }
+  .contact-form{
+    width:50%;
+  }
+
 }
 
 
@@ -1240,12 +1286,14 @@ body{
 
 
 @media only screen and (max-width: 972px){
-
+  .header-wrapper{
+    padding-bottom: 20px;
+  }
   .hero-wrapper {
-    background-image: url(../img/bg-img-2.png);
+    background-image: url("../img/bg-img-2.png");
     background-position-x:  center ;
     background-position-y:  bottom;
-    padding-top: 129px;
+    padding-top: 109px;
     padding-bottom: 250px;
   }
 
@@ -1271,7 +1319,7 @@ body{
 
   /* SERVICES */
 .services-wrapper {
-  background-image:url(../img/res-bg-1.png);
+  background-image:url("../img/res-bg-1.png");
   background-position-x: right;
   background-position-y: top;
 }
@@ -1336,6 +1384,30 @@ body{
 }
 
 
+
+
+.contact-wrapper{
+  background-image: url("../img/res-bg-4.png"), url("../img/res-bg-5.png");
+  background-position:  0% calc(0% + 84px) ,  bottom right;
+}
+.contact-inner{
+  flex-direction: column;
+}
+
+.contact-content{
+    width:80%;
+    text-align: center;
+    margin-bottom: 64px;
+  }
+  .contact-item{
+    text-align: left;
+    width:100%
+  }
+  .contact-form{
+    width:80%;
+  }
+
+
 }
 
 
@@ -1349,6 +1421,9 @@ body{
 
 
   /* HEADER */
+  .header-wrapper{
+    padding-bottom: 20px;
+  }
 
 .logo-img {
   width: 128px;
@@ -1359,9 +1434,8 @@ body{
   margin-left: 48px;
 }
 
-
 .hero-wrapper{
-  padding-top: 112px;
+  padding-top: 92px;
   padding-bottom: 256px;
 }
 .hero-heading{
@@ -1376,7 +1450,7 @@ body{
 
 
 .services-wrapper {
-  background-image:url(../img/res-bg-1.png);
+  background-image:url("../img/res-bg-1.png");
   background-position-x: right;
   background-position-y: top;
   padding-top: 132px;
@@ -1434,7 +1508,7 @@ body{
 /* CONTACT BTN */
 .contact-btn-wrapper {
   padding: 76px 0;
-  background-image: url(../img/res-bg-2.png);
+  background-image: url("../img/res-bg-2.png");
   background-position: bottom left
 }
 
@@ -1505,6 +1579,28 @@ body{
   padding: 100px 0;
 }
 
+
+
+.contact-wrapper{
+  padding-top: 92px;
+  padding-bottom: 112px;
+}
+
+
+
+}
+
+
+
+
+
+@media only screen and (max-width:630px){
+  .directors-list-item{
+    width: 100%
+  }
+  .list-item-btn{
+    left: 45%
+  }
 }
 
 @media only screen and (max-width:575px){
@@ -1512,7 +1608,9 @@ body{
     padding: 0 24px;
   }
 
-
+  .header-wrapper{
+    padding-bottom: 20px;
+  }
 
   .navbar{
     display: none;
@@ -1524,11 +1622,60 @@ body{
     display: block;
   }
 
+.header-responsive-menu{
+  position: fixed;
+  z-index: 2;
+  right: 0;
+  top: 0;
+  right: -255px;
+  width:255px;
+  height: 100vh;
+  display: block;
+  background-color: #2C6269;
+  background-image: url("../img/res-bg-3.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  transition: right 0.3s ease
+}
+.navbar-cros{
+  position: absolute;
+  right: 25px;
+  margin-top: 56px;
+  background-color: transparent;
+  border: none;
+}
+.nav-list{
+  flex-direction: column;
+  margin-left: 48px;
+  margin-top: 112px;
+  margin-bottom: 36px;
+}
+.nav-item ~ .nav-item{
+  margin-left: 0;
+  margin-top: 24px;
+}
+.header-menu-btn {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 33px;
+  margin-left: 48px;
+  border: 2px solid #FFFFFF;
+  border-radius: 24px;
+  -webkit-transition: color 0.3s ease,
+                background-color 0.3s ease;
+  -o-transition: color 0.3s ease,
+                background-color 0.3s ease;
+  transition: color 0.3s ease,
+                background-color 0.3s ease;
+}
 
-
+.header-menu-btn:hover{
+  color: #002529;
+  background-color: #ffffff;
+}
 
   .hero-wrapper {
-    padding-top: 100px;
+    padding-top: 80px;
     padding-bottom: 220px;
   }
 
@@ -1573,7 +1720,6 @@ body{
     position: relative;
     width: 100%;
   }
-
 
   .services-list{
     width: 100%;
@@ -1638,7 +1784,6 @@ body{
   margin-bottom: 24px;
 }
 
-
 .footer-left-text{
   text-align: center;
 }
@@ -1652,8 +1797,18 @@ body{
 
 
 
+.about-wrapper{
+  background-position-y:calc(100% + 100px) ;
+}
+
 .about-text{
   width:100%
+}
+
+
+.about-directors{
+  background-image: url("../img/bg-img-8.png"), url("../img/bg-img-4.png");
+  background-position: calc(0% - 100px) calc(0% - 100px), bottom right;
 }
 .directors-heading{
   font-size: 40px;
@@ -1672,6 +1827,24 @@ body{
 .clients-item{
   width:33%;
   margin-bottom: 20px;
+}
+
+
+
+.contact-wrapper{
+  background-image: url("../img/res-bg-4.png"), url("../img/bg-img-9.png");
+  background-position:  0% calc(0% + 84px) ,  calc(100% + 100px) calc(100% + 112px);
+}
+
+.contact-content{
+  width:90%;
+}
+.contact-list{
+  width:80%;
+}
+
+.contact-form{
+  width:90%;
 }
 
 }
@@ -1711,11 +1884,42 @@ body{
     width: 86.8px;
     height: 42.2px;
   }
+
+
+
+
+
+  .contact-wrapper{
+    background-image: url("../img/bg-img-9.png");
+    background-position: calc(100% + 100px) calc(100% + 112px);
+  }
+  .contact-content{
+    width:100%;
+  }
+  .contact-heading{
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .contact-subheading{
+    font-size: 32px;
+    line-height: 48px;
+  }
+  .contact-list{
+    width:70%;
+  }
+  
+  .contact-form{
+    width:100%;
+  }
 }
 
+
 @media only screen and (max-width: 375px){
+  .header-wrapper{
+    padding-bottom: 20px;
+  }
   .hero-wrapper{
-    padding-top: 80px;
+    padding-top: 60px;
     padding-bottom: 197px;
   }
 
@@ -1736,7 +1940,7 @@ body{
 
 
   .about-wrapper{
-    padding-top: 80px;
+    padding-top: 60px;
     padding-bottom: 108px;
   }
   .directors-inner{
@@ -1759,5 +1963,13 @@ body{
   .clients-heading{
     font-size: 32px;
     line-height: 32px;
+  }
+
+
+
+
+  .contact-wrapper{
+    padding-top: 68px;
+    padding-bottom: 80px;
   }
 }

@@ -29,9 +29,26 @@
               </li>
             </ul>
           </nav>
+          
         </div>
-        <a class="heder-inner__header-btn header-btn" href="contact.html">contact us</a>
-        <button class="header-inner__navbar-buger navbar-burger">
+        <div id="navMenu" class="header-inner__header-responsive-menu header-responsive-menu" >
+          <button class="header-responsive-menu__navbar-cros navbar-cros" onclick="hideMenu()">
+            <img class="navbar-cros__cross-img cross-img" src="./img/cross.png" alt="navbar cross" width="18" height="17">
+          </button>
+          <nav class="header-responsive-menu__navbar-menu navbar-menu">
+            <ul class="navbar-menu__nav-list nav-list">
+              <li class="nav-list__nav-item nav-item">
+                <a class="nav-item__nav-link nav-link" href="index.html">home</a>
+              </li>
+              <li class="nav-list__nav-item nav-item">
+                <a class="nav-item__nav-link nav-link" href="about.html">about</a>
+              </li>
+            </ul>
+          </nav>
+          <a class="header-responsive-menu__header-menu-btn header-menu-btn" href="contact.html">contact us</a>
+        </div>
+        <a class="header-inner__header-btn header-btn" href="contact.html">contact us</a>
+        <button class="header-inner__navbar-buger navbar-burger" onclick="showMenu()">
           <img class="navbar-burger__burger-img burger-img" src="./img/burger.png" alt="navbar burger" width="20" height="17">
         </button>
       </div>
@@ -356,5 +373,19 @@
     </div>
   </div>
 </footer>
+
+
+
+
+<!-- Javascript -->
+<script>
+  var navMenu = document.getElementById("navMenu")
+  function showMenu(){
+    navMenu.style.right = "0";
+  }
+  function hideMenu(){
+    navMenu.style.right = "-255px";
+  }
+</script>
 </body>
 </html>
